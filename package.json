@@ -3,7 +3,7 @@
 	"displayName": "MyFrontendExtension",
 	"description": "My front end extension",
 	"publisher": "shinji",
-	"license": "mit",
+	"license": "MIT",
 	"repository": "https://github.com/JaouShingan/myfrontendextension",
 	"version": "0.0.1",
 	"engines": {
