@@ -2,6 +2,7 @@
 	"name": "myfrontendextension",
 	"displayName": "MyFrontendExtension",
 	"description": "My front end extension",
+	"repository": "https://github.com/JaouShingan/myfrontendextension",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.62.0"
