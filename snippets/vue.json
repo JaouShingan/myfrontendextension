@@ -1,0 +1,23 @@
+{
+  "vue2": {
+    "prefix": "vue2",
+    "body": [
+      "<template>",
+      "\t<div class=\"${1:class-name}\"></div>",
+      "</template>",
+      "<script>",
+      "export default {",
+      "\tname: '${2:ComponentName}',",
+      "\tcomponents: {},",
+      "\tdata () {\n\t\treturn {}\n\t},",
+      "\tmethods: {},",
+      "\tmounted() {}",
+      "}",
+      "</script>",
+      "<style lang=\"${3|css,less,scss,stylus|}\" scoped>",
+      ".${1:class-name} {\n}",
+      "</style>\n"
+    ],
+    "description": "vue 2.x 版本模版"
+  }
+}

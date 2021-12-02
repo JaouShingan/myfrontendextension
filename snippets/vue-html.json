@@ -1,0 +1,9 @@
+{
+  "vfor": {
+    "prefix": "vfor",
+    "body": [
+      "<div v-for=\"(${2:item}, index) in ${1:array}\" :key=\"${3:index}\" >\n\t${0}\n</div>"
+    ],
+    "description": "vue for 循环"
+  }
+}
