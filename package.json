@@ -5,7 +5,7 @@
 	"publisher": "shinji",
 	"license": "MIT",
 	"repository": "https://github.com/JaouShingan/myfrontendextension",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
@@ -29,8 +29,24 @@
 				"path": "./snippets/vue.json"
 			},
 			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
 				"language": "vue-html",
 				"path": "./snippets/vue-html.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "less",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/css.json"
 			}
 		]
 	},

@@ -5,5 +5,14 @@
       "<div v-for=\"(${2:item}, index) in ${1:array}\" :key=\"${3:index}\" >\n\t${0}\n</div>"
     ],
     "description": "vue for 循环"
+  },
+  "tfor": {
+    "prefix": "tfor",
+    "body": [
+      "<template v-for=\"(${2:item}, index) in ${1:array}\">",
+      "\t<div :key=\"${3:index}\" >\n\t${0}\n\t</div>",
+      "</template>"
+    ],
+    "description": "template for 循环"
   }
 }

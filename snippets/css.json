@@ -1,0 +1,11 @@
+{
+  ".": {
+    "prefix": ".",
+    "body": [
+      ".${1:class-name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "css base"
+  }
+}
