@@ -8,7 +8,7 @@ const vscode = require('vscode');
 /**
  * @param {vscode.ExtensionContext} context
  */
-function activate(context) {
+function activate (context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
@@ -21,14 +21,18 @@ function activate(context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from MyFrontendExtension!');
+		// vscode.window.showInformationMessage('Hello World from MyFrontendExtension!');
+		const str = vscode.workspace.workspaceFolders.map(item => {
+			return `index: ${item.index}, name: ${item.name}, uri: ${item.uri.path}\n`
+		}).join('\n')
+		vscode.window.showInformationMessage(str);
 	});
 
 	context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
-function deactivate() {}
+function deactivate () { }
 
 module.exports = {
 	activate,

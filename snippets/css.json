@@ -7,5 +7,41 @@
       "}"
     ],
     "description": "css base"
+  },
+  ".p": {
+    "prefix": ".p",
+    "body": [
+      ".p_${1:class-name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "css page"
+  },
+  ".g": {
+    "prefix": ".g",
+    "body": [
+      ".g_${1:class-name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "css layout"
+  },
+  ".m": {
+    "prefix": ".m",
+    "body": [
+      ".m_${1:class-name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "css module"
+  },
+  ".u": {
+    "prefix": ".u",
+    "body": [
+      ".u_${1:class-name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "css unit"
   }
 }
