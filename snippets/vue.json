@@ -8,6 +8,7 @@
       "<script>",
       "export default {",
       "\tname: '${2:ComponentName}',",
+      "\tprops: {},",
       "\tcomponents: {},",
       "\tdata () {\n\t\treturn {}\n\t},",
       "\tmounted () {},",

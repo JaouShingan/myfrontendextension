@@ -11,7 +11,7 @@
   ".p": {
     "prefix": ".p",
     "body": [
-      ".p_${1:class-name} {",
+      ".p-${1:class-name} {",
       "\t${0}",
       "}"
     ],
@@ -20,7 +20,7 @@
   ".g": {
     "prefix": ".g",
     "body": [
-      ".g_${1:class-name} {",
+      ".g-${1:class-name} {",
       "\t${0}",
       "}"
     ],
@@ -29,7 +29,7 @@
   ".m": {
     "prefix": ".m",
     "body": [
-      ".m_${1:class-name} {",
+      ".m-${1:class-name} {",
       "\t${0}",
       "}"
     ],
@@ -38,7 +38,7 @@
   ".u": {
     "prefix": ".u",
     "body": [
-      ".u_${1:class-name} {",
+      ".u-${1:class-name} {",
       "\t${0}",
       "}"
     ],

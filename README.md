@@ -27,3 +27,7 @@
 |key  |description        |
 |:----|:------------------|
 |.|css格式化代码|
+|.g|css layout|
+|.p|css page|
+|.m|css module|
+|.u|css unit|
