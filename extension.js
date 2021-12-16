@@ -1,7 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -21,11 +20,7 @@ function activate (context) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		// vscode.window.showInformationMessage('Hello World from MyFrontendExtension!');
-		const str = vscode.workspace.workspaceFolders.map(item => {
-			return `index: ${item.index}, name: ${item.name}, uri: ${item.uri.path}\n`
-		}).join('\n')
-		vscode.window.showInformationMessage(str);
+		vscode.window.showInformationMessage('Hello World from MyFrontendExtension!');
 	});
 
 	context.subscriptions.push(disposable);

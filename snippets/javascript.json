@@ -56,7 +56,7 @@
   "cafoo": {
     "prefix": "cafoo",
     "body": [
-      "const ${1:fooName} = (${2}) {",
+      "const ${1:fooName} = (${2}) => {",
       "\t${0}",
       "}"
     ],
@@ -79,5 +79,19 @@
       "}"
     ],
     "description": "声明一个async await 箭头函数"
+  },
+  "print console log": {
+    "prefix": "log",
+    "body": [
+      "console.log('${TM_FILENAME/(.*)(\\..*)/${1:/upcase}/} line$TM_LINE_NUMBER: ', ${0:'something'})"
+    ],
+    "description": "console.log('something')"
+  },
+  "print console error": {
+    "prefix": "error",
+    "body": [
+      "console.error('${TM_FILENAME/(.*)(\\..*)/${1:/upcase}/} line$TM_LINE_NUMBER: ', ${0:'something'})"
+    ],
+    "description": "console.error(\"something\")"
   }
 }

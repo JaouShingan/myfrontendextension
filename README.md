@@ -22,6 +22,8 @@
 |cafoo|声明一个箭头函数|
 |asfoo|async await 箭头函数|
 |casfoo|声明一个async await 箭头函数|
+|log|console.log|
+|error|console.error|
 
 ### css | less | scss
 |key  |description        |
