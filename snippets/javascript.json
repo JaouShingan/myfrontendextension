@@ -74,7 +74,7 @@
   "casfoo": {
     "prefix": "casfoo",
     "body": [
-      "const ${1:fooName} = async (${2}) {",
+      "const ${1:fooName} = async (${2}) => {",
       "\tawait ${0}",
       "}"
     ],
@@ -83,15 +83,29 @@
   "print console log": {
     "prefix": "log",
     "body": [
-      "console.log('${TM_FILENAME/(.*)(\\..*)/${1:/upcase}/} line$TM_LINE_NUMBER: ', ${0:'something'})"
+      "console.log('${2:fileName: ${TM_FILENAME/(.*)(\\..*)/${1}/} line$TM_LINE_NUMBER: }', ${0:'something'})"
     ],
     "description": "console.log('something')"
   },
   "print console error": {
     "prefix": "error",
     "body": [
-      "console.error('${TM_FILENAME/(.*)(\\..*)/${1:/upcase}/} line$TM_LINE_NUMBER: ', ${0:'something'})"
+      "console.error('${2:fileName: ${TM_FILENAME/(.*)(\\..*)/${1}/} line$TM_LINE_NUMBER: }', ${0:'something'})"
     ],
     "description": "console.error(\"something\")"
+  },
+  "setlocalStorage": {
+    "prefix": "setlocalStorage",
+    "body": [
+      "localStorage.setItem('${1:itemName}', ${2:JSON.stringify(${3:'todo'})})"
+    ],
+    "description": "set a localStorage"
+  },
+  "getlocalStorage": {
+    "prefix": "getlocalStorage",
+    "body": [
+      "localStorage.getItem('${1:itemName}')"
+    ],
+    "description": "get a localStorage"
   }
 }
