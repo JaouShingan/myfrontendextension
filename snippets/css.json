@@ -43,5 +43,32 @@
       "}"
     ],
     "description": "css unit"
+  },
+  "flex center": {
+    "prefix": "flexcenter",
+    "body": [
+      "display: flex;",
+      "justify-content: center;",
+      "align-items: center;\n"
+    ],
+    "description": "flex 居中布局"
+  },
+  "flex column": {
+    "prefix": "flexcol",
+    "body": [
+      "display: flex;",
+      "flex-direction: column;"
+    ],
+    "description": "flex 纵向布局"
+  },
+  "ellipsis": {
+    "prefix": "ellipsis",
+    "body": [
+      "width: ${1:100px};",
+      "white-space: nowrap;",
+      "overflow: hidden;",
+      "text-overflow: ellipsis;"
+    ],
+    "description": "单行文本使用省略符号"
   }
 }

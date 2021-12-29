@@ -1,18 +1,32 @@
 {
-  "vfor": {
-    "prefix": "vfor",
+  "div-for": {
+    "prefix": "divfor",
     "body": [
       "<div v-for=\"(${2:item}, index) in ${1:array}\" :key=\"${3:index}\" >\n\t${0}\n</div>"
     ],
-    "description": "vue for 循环"
+    "description": "vue div元素 for 循环"
   },
-  "tfor": {
+  "span-for": {
+    "prefix": "spanfor",
+    "body": [
+      "<span v-for=\"(${2:item}, index) in ${1:array}\" :key=\"${3:index}\" >\n\t${0}\n</span>"
+    ],
+    "description": "vue span元素 for 循环"
+  },
+  "template-for": {
     "prefix": "tfor",
     "body": [
       "<template v-for=\"(${2:item}, index) in ${1:array}\">",
       "\t<div :key=\"${3:index}\" >\n\t${0}\n\t</div>",
       "</template>"
     ],
-    "description": "template for 循环"
+    "description": "vue template元素 for 循环"
+  },
+  "element-attr-for": {
+    "prefix": "efor",
+    "body": [
+      "v-for=\"(${2:item}, index) in ${1:array}\" :key=\"${3:index}\""
+    ],
+    "description": "直接作为属性的 vue for 循环"
   }
 }
