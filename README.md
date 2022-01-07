@@ -11,11 +11,12 @@
 |spanfor|span v-for 循环|
 |tfor|template v-for 循环|
 |efor|直接作为元素属性的 v-for 循环|
+|$t|国际化|
 
 ### js
 |key  |description        |
 |:----|:------------------|
-|foo|定义一个函数|
+|foo或fn|定义一个函数|
 |cfoo|声明一个函数|
 |kfoo|以函数名为属性名的函数|
 |sfoo|async await 函数|
@@ -28,11 +29,12 @@
 |error|console.error|
 |setlocalstorage|localStorage.set|
 |getlocalstorage|localStorage.get|
+|$t|国际化|
 
 ### css | less | scss
 |key  |description        |
 |:----|:------------------|
-|.|css格式化代码|
+|.|css 代码|
 |.g|css layout|
 |.p|css page|
 |.m|css module|

@@ -8,6 +8,15 @@
     ],
     "description": "定义一个函数"
   },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "function ${1:fooName} (${2}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "定义一个函数"
+  },
   "cfoo": {
     "prefix": "cfoo",
     "body": [
@@ -107,5 +116,11 @@
       "localStorage.getItem('${1:itemName}')"
     ],
     "description": "get a localStorage"
+  },
+  "this.$t": {
+    "prefix": "$t",
+    "body": [
+      "this.\\$t('${1}')${0}"
+    ]
   }
 }

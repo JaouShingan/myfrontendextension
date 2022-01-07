@@ -28,5 +28,11 @@
       "v-for=\"(${2:item}, index) in ${1:array}\" :key=\"${3:index}\""
     ],
     "description": "直接作为属性的 vue for 循环"
+  },
+  "$t": {
+    "prefix": "$t",
+    "body": [
+      "\\$t('${1}')${0}"
+    ]
   }
 }
