@@ -30,6 +30,12 @@
 |setlocalstorage|localStorage.set|
 |getlocalstorage|localStorage.get|
 |$t|国际化|
+|deconstruct|解构语法|
+|.then|promise then|
+|.catch|promise catch|
+|.finally|promise finally|
+|.reduce|array reduce|
+|.map|array map|
 
 ### css | less | scss
 |key  |description        |

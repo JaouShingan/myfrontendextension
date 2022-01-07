@@ -92,14 +92,14 @@
   "print console log": {
     "prefix": "log",
     "body": [
-      "console.log('${2:fileName: ${TM_FILENAME/(.*)(\\..*)/${1}/} line$TM_LINE_NUMBER: }', ${0:'something'})"
+      "console.log('${2:fileName: ${TM_FILENAME/(.*)(\\..*)/${1}/} line$TM_LINE_NUMBER: }', ${3:'something'})${0}"
     ],
     "description": "console.log('something')"
   },
   "print console error": {
     "prefix": "error",
     "body": [
-      "console.error('${2:fileName: ${TM_FILENAME/(.*)(\\..*)/${1}/} line$TM_LINE_NUMBER: }', ${0:'something'})"
+      "console.error('${2:fileName: ${TM_FILENAME/(.*)(\\..*)/${1}/} line$TM_LINE_NUMBER: }', ${3:'something'})${0}"
     ],
     "description": "console.error(\"something\")"
   },
@@ -121,6 +121,56 @@
     "prefix": "$t",
     "body": [
       "this.\\$t('${1}')${0}"
-    ]
+    ],
+    "description": "国际化"
+  },
+  "deconstruct": {
+    "prefix": "deconstruct",
+    "body": [
+      "const { ${2} } = ${1}${0}"
+    ],
+    "description": "解构"
+  },
+  ".then": {
+    "prefix": ".then",
+    "body": [
+      ".then((${1:res}) => {\n\t${2}",
+      "})${0}"
+    ],
+    "description": "promise then"
+  },
+  ".catch": {
+    "prefix": ".catch",
+    "body": [
+      ".catch((${1:error}) => {\n\t${2}",
+      "})${0}"
+    ],
+    "description": "promise catch"
+  },
+  ".finally": {
+    "prefix": ".finally",
+    "body": [
+      ".finally(() => {\n\t${1}",
+      "})${0}"
+    ],
+    "description": "promise finally"
+  },
+  ".reduce": {
+    "prefix": ".reduce",
+    "body": [
+      ".reduce((${1:prev}, ${2:curr}) => {",
+      "\t${4:return prev}",
+      "}, ${3:{\\}})"
+    ],
+    "description": "array reduce"
+  },
+  ".map": {
+    "prefix": ".map",
+    "body": [
+      ".map((${1:item}) => {",
+      "\t${4:return item}",
+      "})"
+    ],
+    "description": "array map"
   }
 }
