@@ -62,6 +62,15 @@
     ],
     "description": "箭头函数"
   },
+  "afn": {
+    "prefix": "afn",
+    "body": [
+      "(${1}) => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "箭头函数"
+  },
   "cafoo": {
     "prefix": "cafoo",
     "body": [
@@ -134,16 +143,16 @@
   ".then": {
     "prefix": ".then",
     "body": [
-      ".then((${1:res}) => {\n\t${2}",
-      "})${0}"
+      ".then((${1:res}) => {\n\t${0}",
+      "})"
     ],
     "description": "promise then"
   },
   ".catch": {
     "prefix": ".catch",
     "body": [
-      ".catch((${1:error}) => {\n\t${2}",
-      "})${0}"
+      ".catch((${1:error}) => {\n\t${0}",
+      "})"
     ],
     "description": "promise catch"
   },
@@ -151,7 +160,7 @@
     "prefix": ".finally",
     "body": [
       ".finally(() => {\n\t${1}",
-      "})${0}"
+      "})"
     ],
     "description": "promise finally"
   },
@@ -172,5 +181,14 @@
       "})"
     ],
     "description": "array map"
+  },
+  "newPromise": {
+    "prefix": "newPromise",
+    "body": [
+      "new Promise((resolve, reject) => {",
+      "\t${0}",
+      "})"
+    ],
+    "description": "new Promise"
   }
 }

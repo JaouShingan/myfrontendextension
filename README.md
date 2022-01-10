@@ -21,7 +21,7 @@
 |kfoo|以函数名为属性名的函数|
 |sfoo|async await 函数|
 |csfoo|声明一个async await 函数|
-|afoo|箭头函数|
+|afoo或afn|箭头函数|
 |cafoo|声明一个箭头函数|
 |asfoo|async await 箭头函数|
 |casfoo|声明一个async await 箭头函数|
@@ -36,6 +36,7 @@
 |.finally|promise finally|
 |.reduce|array reduce|
 |.map|array map|
+|newPromise|new Promise|
 
 ### css | less | scss
 |key  |description        |
