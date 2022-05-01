@@ -168,7 +168,7 @@
     "prefix": ".reduce",
     "body": [
       ".reduce((${1:prev}, ${2:curr}) => {",
-      "\t${4:return prev}",
+      "\treturn ${4:prev}",
       "}, ${3:{\\}})"
     ],
     "description": "array reduce"
@@ -177,7 +177,7 @@
     "prefix": ".map",
     "body": [
       ".map((${1:item}) => {",
-      "\t${4:return item}",
+      "\treturn ${4:item}",
       "})"
     ],
     "description": "array map"
