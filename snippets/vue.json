@@ -15,6 +15,7 @@
       "\tcomponents: {},",
       "\tdata () {\n\t\treturn {}\n\t},",
       "\tmounted () {},",
+      "\tcomputed: {},",
       "\tmethods: {}",
       "}",
       "</script>",
@@ -23,5 +24,42 @@
       "</style>\n"
     ],
     "description": "vue 2.x 版本模版"
+  },
+  "vue3": {
+    "prefix": "vue3",
+    "body": [
+      "<template>",
+      "\t<div class=\"${1:class-name}\">${0}</div>",
+      "</template>",
+      "<script>",
+      "export default {",
+      "\tname: '${2:ComponentName}',",
+      "\tprops: {},",
+      "\temits: [],",
+      "\tcomponents: {},",
+      "\tdata () {\n\t\treturn {}\n\t},",
+      "\tmounted () {},",
+      "\tcomputed: {},",
+      "\tmethods: {}",
+      "}",
+      "</script>",
+      "<style lang=\"${3|css,less,scss,stylus|}\" scoped>",
+      ".${1:class-name} {\n}",
+      "</style>\n"
+    ]
+  },
+  "vue3setup": {
+    "prefix": "vue3setup",
+    "body": [
+      "<script setup>",
+      "${0}",
+      "</script>",
+      "<template>",
+      "\t<div class=\"${1:class-name}\"></div>",
+      "</template>",
+      "<style lang=\"${2|css,less,scss,stylus|}\" scoped>",
+      ".${1:class-name} {\n}",
+      "</style>\n"
+    ]
   }
 }
