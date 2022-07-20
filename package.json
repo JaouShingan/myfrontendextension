@@ -5,7 +5,8 @@
 	"publisher": "shinji",
 	"license": "MIT",
 	"repository": "https://github.com/JaouShingan/myfrontendextension",
-	"version": "0.0.16",
+	"version": "0.0.17",
+	"icon": "me_icon.png",
 	"engines": {
 		"vscode": "^1.62.0"
 	},
