@@ -7,6 +7,9 @@
 |key  |description        |
 |:----|:------------------|
 |vue2|vue 2.x 模版|
+|vue2ts|vue 2.x ts 模版|
+|vue3|vue 3.x 模版|
+|vue3setup|vue 3.x setup模版|
 |divfor|div v-for 循环|
 |spanfor|span v-for 循环|
 |tfor|template v-for 循环|

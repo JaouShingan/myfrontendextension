@@ -7,6 +7,7 @@
       "</template>",
       "<script>",
       "/**",
+      " * @name",
       " * @createDate ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
       " */",
       "export default {",
@@ -25,6 +26,29 @@
     ],
     "description": "vue 2.x 版本模版"
   },
+  "vue2ts": {
+    "prefix": "vue2ts",
+    "body": [
+      "<template>",
+      "\t<div class=\"${1:class-name}\">${0}</div>",
+      "</template>",
+      "<script lang=\"ts\">",
+      "/**",
+      " * @name",
+      " * @createDate ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      " */",
+      "import { defineComponent } from 'vue'",
+      "export default defineComponent({",
+      "\tname: '${2:ComponentName}',",
+      "\tsetup () {\n\t\treturn {}\n\t}",
+      "})",
+      "</script>",
+      "<style lang=\"${3|css,less,scss,stylus|}\" scoped>",
+      ".${1:class-name} {\n}",
+      "</style>\n"
+    ],
+    "description": "vue 2.x ts setup版本模版"
+  },
   "vue3": {
     "prefix": "vue3",
     "body": [
@@ -38,7 +62,7 @@
       "\temits: [],",
       "\tcomponents: {},",
       "\tdata () {\n\t\treturn {}\n\t},",
-      "\tmounted () {},",
+      "\tmounted () {\n\t\t// todo\n},",
       "\tcomputed: {},",
       "\tmethods: {}",
       "}",
@@ -46,7 +70,8 @@
       "<style lang=\"${3|css,less,scss,stylus|}\" scoped>",
       ".${1:class-name} {\n}",
       "</style>\n"
-    ]
+    ],
+    "description": "vue 3.x 版本模版"
   },
   "vue3setup": {
     "prefix": "vue3setup",
@@ -60,6 +85,7 @@
       "<style lang=\"${2|css,less,scss,stylus|}\" scoped>",
       ".${1:class-name} {\n}",
       "</style>\n"
-    ]
+    ],
+    "description": "vue 3.x setup 版本模版"
   }
 }

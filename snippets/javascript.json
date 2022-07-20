@@ -168,6 +168,7 @@
     "prefix": ".reduce",
     "body": [
       ".reduce((${1:prev}, ${2:curr}) => {",
+      "\t${0}",
       "\treturn ${4:prev}",
       "}, ${3:{\\}})"
     ],
@@ -177,6 +178,7 @@
     "prefix": ".map",
     "body": [
       ".map((${1:item}) => {",
+      "\t${0}",
       "\treturn ${4:item}",
       "})"
     ],
