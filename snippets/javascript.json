@@ -11,56 +11,11 @@
   "fn": {
     "prefix": "fn",
     "body": [
-      "function ${1:fooName} (${2}) {",
-      "\t${0}",
-      "}"
-    ],
-    "description": "定义一个函数"
-  },
-  "cfoo": {
-    "prefix": "cfoo",
-    "body": [
-      "const ${1:fooName} = function (${2}) {",
-      "\t${0}",
-      "}"
-    ],
-    "description": "声明一个函数"
-  },
-  "kfoo": {
-    "prefix": "kfoo",
-    "body": [
       "${1:fooName} (${2}) {",
       "\t${0}",
       "}"
     ],
-    "description": "以函数名为属性名的函数"
-  },
-  "sfoo": {
-    "prefix": "sfoo",
-    "body": [
-      "async function ${1:fooName} (${2}) {",
-      "\tawait ${0}",
-      "}"
-    ],
-    "description": "async await 函数"
-  },
-  "csfoo": {
-    "prefix": "csfoo",
-    "body": [
-      "const ${1:fooName} = async function (${2}) {",
-      "\tawait ${0}",
-      "}"
-    ],
-    "description": "声明一个async await 函数"
-  },
-  "afoo": {
-    "prefix": "afoo",
-    "body": [
-      "(${1}) => {",
-      "\t${0}",
-      "}"
-    ],
-    "description": "箭头函数"
+    "description": "定义一个函数"
   },
   "afn": {
     "prefix": "afn",
@@ -70,33 +25,6 @@
       "}"
     ],
     "description": "箭头函数"
-  },
-  "cafoo": {
-    "prefix": "cafoo",
-    "body": [
-      "const ${1:fooName} = (${2}) => {",
-      "\t${0}",
-      "}"
-    ],
-    "description": "声明一个箭头函数"
-  },
-  "asfoo": {
-    "prefix": "asfoo",
-    "body": [
-      "async (${1}) => {",
-      "\tawait ${0}",
-      "}"
-    ],
-    "description": "async await 箭头函数"
-  },
-  "casfoo": {
-    "prefix": "casfoo",
-    "body": [
-      "const ${1:fooName} = async (${2}) => {",
-      "\tawait ${0}",
-      "}"
-    ],
-    "description": "声明一个async await 箭头函数"
   },
   "print console log": {
     "prefix": "log",
@@ -136,9 +64,18 @@
   "deconstruct": {
     "prefix": "deconstruct",
     "body": [
-      "const { ${2} } = ${1}${0}"
+      "const { $0 } = ${1}"
     ],
     "description": "解构"
+  },
+  "get and set object": {
+    "prefix": "getset",
+    "body": [
+      "{",
+      "\tget () { return },",
+      "\tset (val) {}",
+      "}"
+    ]
   },
   ".then": {
     "prefix": ".then",

@@ -19,21 +19,16 @@
 ### js
 |key  |description        |
 |:----|:------------------|
-|foo或fn|定义一个函数|
-|cfoo|声明一个函数|
-|kfoo|以函数名为属性名的函数|
-|sfoo|async await 函数|
-|csfoo|声明一个async await 函数|
-|afoo或afn|箭头函数|
-|cafoo|声明一个箭头函数|
-|asfoo|async await 箭头函数|
-|casfoo|声明一个async await 箭头函数|
+|foo|定义一个函数|
+|fn|定义一个作为属性的函数|
+|afn|声明一个箭头函数|
 |log|console.log|
 |error|console.error|
 |setlocalstorage|localStorage.set|
 |getlocalstorage|localStorage.get|
 |$t|国际化|
 |deconstruct|解构语法|
+|getset|输出一个包含get和set的对象|
 |.then|promise then|
 |.catch|promise catch|
 |.finally|promise finally|
